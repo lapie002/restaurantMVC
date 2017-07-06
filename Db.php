@@ -14,7 +14,7 @@ class Db{
         if(!isset(self::$instance))
         {
             //$pdo_option[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-            self::$instance = new PDO('mysql:host=localhost;dbname=projetmvc','root','root');
+            self::$instance = new PDO('mysql:host=localhost;dbname=tp_resto','root','root');
         }
         return self::$instance;
     }
